@@ -16,6 +16,8 @@ export const accountAPI = {
   getById: (id) => api.get(`/accounts/${id}`),
   update: (id, data) => api.put(`/accounts/${id}`, data),
   delete: (id) => api.delete(`/accounts/${id}`),
+  sendOTP: (data) => api.post("/accounts/send-otp", data),
+  verifyOTP: (data) => api.post("/accounts/verify-otp", data),
 };
 
 // Group APIs
